@@ -23,7 +23,8 @@ $serv->on('Task',function ($serv,$taskId,$fromId,$data){
      sleep(1);
      echo "task running.---{$i}".PHP_EOL;
    }
-   echo "task end.".PHP_EOL;
+   //echo "task end.".PHP_EOL;
+   return "task end.".PHP_EOL;
 });
 //注册onFinish回调
 $serv->on('Finish',function ($serv,$taskId,$data){
